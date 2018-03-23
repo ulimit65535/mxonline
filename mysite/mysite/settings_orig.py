@@ -128,9 +128,10 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-
-EMAIL_HOST = 'smtp.163.com'
-EMAIL_HOST_USER = 'xxxxxxxxxx'
-EMAIL_HOST_PASSWORD = 'xxxxxxxxxxxx'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.exmail.qq.com'
 EMAIL_PORT = 465
-EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'xxx@xxx.com'
+EMAIL_HOST_PASSWORD = 'xxxxxx'
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = 'xxx@xxx.com'
